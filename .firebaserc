@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-2fd8f": {
+      "hosting": {
+        "login-firebase-bootstrap": [
+          "login-ng-2fd8f"
+        ]
+      }
+    }
+  }
+}

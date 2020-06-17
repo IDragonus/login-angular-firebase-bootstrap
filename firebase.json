@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "login-firebase-bootstrap",
+      "public": "dist/login-firebase-bootstrap",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
