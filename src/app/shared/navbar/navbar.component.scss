@@ -2,3 +2,14 @@
   color: orange;
   font-weight: bold;
 }
+
+.nav-option {
+  cursor: pointer;
+}
+
+.nav-option:hover {
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 5px;
+  font-weight: bold;
+}
