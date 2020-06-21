@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { SendEmailComponent } from './auth/send-email/send-email.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, SendEmailComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
