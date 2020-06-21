@@ -1,5 +1,5 @@
 import { AuthService } from './../services/auth.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -8,14 +8,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./send-email.component.scss'],
   providers: [AuthService],
 })
-export class SendEmailComponent implements OnInit {
+export class SendEmailComponent {
   public user$: Observable<any> = this.authSvc.afAuth.user;
   constructor(private authSvc: AuthService) {}
 
-  ngOnInit(): void {}
-
   onSendEmail(): void {
-    //service sendEmail()
-    console.log('button works!');
+    this.authSvc.sendVerificarionEmail();
   }
 }

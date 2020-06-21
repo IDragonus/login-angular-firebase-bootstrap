@@ -23,7 +23,7 @@ const routes: Routes = [
       import('./auth/register/register.module').then((m) => m.RegisterModule),
   },
   {
-    path: 'verificarion-email',
+    path: 'verification-email',
     component: SendEmailComponent,
   },
 ];
